@@ -6,7 +6,7 @@
 }
 
 .moviePoster {
-  width: 100%;
+  width: 40%;
   height: 100%;
 }
 .moviePosterImg {
@@ -16,8 +16,14 @@
   object-fit: cover;
 }
 
+.movieDesc {
+  width: 60%;
+
+}
+
 .movieNotFound {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

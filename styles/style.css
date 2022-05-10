@@ -175,7 +175,6 @@
     
     .rightSide .boxMainSlider {
         /* border-top: 2px solid grey; */
-        min-height: 80px;
         display: flex;
     }
     
