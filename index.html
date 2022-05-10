@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTV - הטלוויזיה שלך ברשת</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/moviePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="containet-fluid">
+        <div class="container">
+            <header>
+                <div class="Upper">
+                    <div class="logo">
+                        <a href="/"><img src="images/logo.png" alt="logo" width="250px"></a>
+                    </div>
+                    <div class="search">
+                        <form id="searchForm" action="#">
+                            <input id='searchInput' type="text" placeholder="איזה סרט או סדרה תרצה לראות?"
+                                name="search">
+                            <button type="submit" class="fa fa-search"></button>
+                        </form>
+                    </div>
+
+
+                </div>
+                <ul class="menu">
+                    <li><a href="#" class="active">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                    <li><a href="#">ראשי</a></li>
+                </ul>
+                <div class="sliderMovies">
+                    <div class="BoxSlider">
+                        <img src="images/spaiderman.jpg" />
+                    </div>
+                    <div class="BoxSlider">
+                        <img src="images/onesheet.jpg" />
+                    </div>
+                    <div class="BoxSlider">
+                        <img src="images/shadow.jpg" />
+                    </div>
+                    <div class="BoxSlider">
+                        <img src="images/The_Batman_Official_Poster.jpg" />
+                    </div>
+                    <div class="BoxSlider">
+                        <img src="images/Uncharted_Poster.jpg" />
+                    </div>
+                    <div class="BoxSlider">
+                        <img src="images/sc.jpg" />
+                    </div>
+
+                </div>
+            </header>
+            <div class="main">
+                <div class="rightSide">
+                    <div class="BorderTop">
+                        <div class="boxName">
+                            <h2>תוצאות חיפוש</h2>
+                        </div>
+                    </div>
+                    <div class="swiper boxMainSlider">
+                        <div class="swiper-wrapper" id="swiper_pop_movies">
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                    <div class="moviePage">
+                        <div class="moviePoster">
+                            <img class="moviePosterImg" src="" alt="">
+                        </div>
+                        <div class="movieDesc">
+                            <h1 class="movieHeading"></h1>
+                            <h3 class="movieGenre"></h3>
+                            <h3 class="movieYearRating"></h3>
+                            <h3 class="movieDirector"></h3>
+                            <p class="moviePlot"></p>
+
+                        </div>
+                    </div>
+                    <script>
+                        const swiper = new Swiper(".boxMainSlider", {
+                            slidesPerView: 5,
+                            spaceBetween: 0,
+                            freeMode: true,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
+
+
+                </div>
+
+                <div class="leftSide">
+                    <button class="btn"><span>התחבר לאתר</span></button>
+                    <button class="btn">הרשם לאתר</button>
+                    <a href="#"><button class="btn">העלה סרט / סדרה</button></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/scripts.js"></script>
+</body>
+
+</html>

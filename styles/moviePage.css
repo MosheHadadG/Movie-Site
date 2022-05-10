@@ -1,0 +1,10 @@
+.moviePage {
+  display: flex;
+  gap: 5%;
+  text-align: center;
+  display: none;
+}
+
+.moviePosterImg {
+  border: 3px solid #0a6ab5;
+}
