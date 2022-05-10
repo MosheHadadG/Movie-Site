@@ -9,8 +9,9 @@ export async function getMovieById(movieId) {
     }
     else {
       const data = await response.json();
+      console.log(data)
       const renderMovieToHtml = new Movie(data.Poster,data.Title, data.Genre,
-         data.Year,data.Plot, data.Director, data.Actors, data.imdbRating);
+         data.Year,data.Plot, data.Director, data.Actors, data.imdbRating, data.Runtime);
         console.log(renderMovieToHtml)
         renderMovieToHtml.renderToHtml();
     }
