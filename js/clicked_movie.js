@@ -1,7 +1,7 @@
 import { Movie } from "./renderMovieClicked.js";
 
 export async function getMovieById(movieId) {
-  const url = `http://www.omdbapi.com/?i=${movieId}&apikey=19f10fa8`
+  const url = `https://www.omdbapi.com/?i=${movieId}&apikey=19f10fa8`
   try {
     const response = await fetch(url);
     if (!response.ok) {

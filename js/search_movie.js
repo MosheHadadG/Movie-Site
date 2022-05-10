@@ -16,7 +16,7 @@ export const swiperSearchMovies = document.querySelector('#swiper_pop_movies');
 searchForm.addEventListener('submit', searchUserEvent);
 
 export async function getMovieByName(movieName) { 
-  const url = `http://www.omdbapi.com/?s=${movieName}&apikey=19f10fa8`
+  const url = `https://www.omdbapi.com/?s=${movieName}&apikey=19f10fa8`
   const response = await fetch(url);
   const data = await response.json();
   console.log(data.Search)
