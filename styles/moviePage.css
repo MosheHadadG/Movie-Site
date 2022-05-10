@@ -10,7 +10,7 @@
   height: 100%;
 }
 .moviePosterImg {
-  border: 3px solid #0a6ab5;
+  border: 3px solid gray;
   width: 100%;
   height: 100%;
   object-fit: cover;
